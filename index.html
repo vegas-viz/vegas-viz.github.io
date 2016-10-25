@@ -213,7 +213,7 @@
 							<div class="post-article">
                 <pre>
                   <code class="scala" >
-Vegas(width=800,height=600)
+Vegas("Sample Area Chart", width=800, height=600)
   .withURL(Cars)
   .mark(Area)
   .encodeX("Acceleration", Quantitative, bin=Bin())
@@ -245,14 +245,13 @@ Vegas(width=800,height=600)
 							<div class="post-article">
                 <pre>
                   <code class="scala">
-Vegas().
-  withURL(Movies).
-  mark(Point).
-  encodeX("IMDB_Rating", Quantitative, bin=Bin(maxbins=10.0)).
-  encodeY("Rotten_Tomatoes_Rating", Quantitative, bin=Bin(maxbins=10.0)).
-  encodeSize(aggregate=AggOps.Count, field="*", dataType=Quantitative).
-  configCell(height=600,width=800).
-  show
+Vegas("Sample Binned Scatterplot", width=800, height=600)
+  .withURL(Movies)
+  .mark(Point)
+  .encodeX("IMDB_Rating", Quantitative, bin=Bin(maxbins=10.0))
+  .encodeY("Rotten_Tomatoes_Rating", Quantitative, bin=Bin(maxbins=10.0))
+  .encodeSize(aggregate=AggOps.Count, field="*", dataType=Quantitative)
+  .show
                   </code>
                 </pre>
               </div>
@@ -278,17 +277,53 @@ Vegas().
 							<div class="post-article">
                 <pre>
                   <code class="scala">
-Vegas("A scatterplot showing horsepower and miles per gallons with binned acceleration on color.",width=800,height=600).
-  withURL(Cars).
-  mark(Point).
-  encodeX("Horsepower", Quantitative).
-  encodeY("Miles_per_Gallon", Quantitative).
-  encodeColor(field="Acceleration", dataType=Quantitative, bin=Bin(maxbins=5.0)).
-  show
+Vegas("Sample Scatterplot", width=800, height=600)
+  .withURL(Cars)
+  .mark(Point)
+  .encodeX("Horsepower", Quantitative)
+  .encodeY("Miles_per_Gallon", Quantitative)
+  .encodeColor(field="Acceleration", dataType=Quantitative, bin=Bin(maxbins=5.0))
+  .show
                   </code>
                 </pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-3.jpg" alt=""></div>
+						</article>
+            <hr>
+            <!--END -->
+
+            <!--BEGIN-->
+						<article>
+							<h4 class="post-title"><a href="">The post title goes here.</a></h4>
+							<div class="post-meta text-uppercase">
+								<span>Appril 3, 2014</span>
+								<span>In <a href="">Design</a></span>
+								<span>By <a href="">Admin</a></span>
+							</div>
+							<div class="post-article">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
+
+							</div>
+							<a href="" class="btn btn-readmore">Scala</a>
+
+							<div class="post-article">
+                <pre>
+                  <code class="scala">
+  Vegas("Sample Multi Series Line Chart", width=800, height=600)
+    .withURL(Stocks, formatType=DataFormat.Csv)
+    .mark(Line)
+    .encodeX("date", Temp)
+    .encodeY("price", Quant)
+    .encodeColor(
+       field="symbol",
+       dataType=Nominal,
+       legend=Legend(orient="left", title="Stock Symbol"))
+    .encodeDetailFields(Field(field="symbol", dataType=Nominal))
+    .show
+                  </code>
+                </pre>
+              </div>
+						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-4.jpg" alt=""></div>
 						</article>
             <hr>
             <!--END -->
