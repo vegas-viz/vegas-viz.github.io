@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
+  <!-- highlight -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+	<link rel="stylesheet" href="css/github.css" />
 
 
 	<!-- Favicon -->
@@ -209,6 +212,7 @@
 
 							<div class="post-article">
                 <pre>
+                  <code class="scala" >
 Vegas(width=800,height=600)
   .withURL(Cars)
   .mark(Area)
@@ -216,6 +220,7 @@ Vegas(width=800,height=600)
   .encodeY("Horsepower", Quantitative, AggOps.Mean, enableBin=false)
   .encodeColor(field="Cylinders", dataType=Nominal)
   .show
+                  </code>
                 </pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-1.jpg" alt=""></div>
@@ -239,6 +244,7 @@ Vegas(width=800,height=600)
 
 							<div class="post-article">
                 <pre>
+                  <code class="scala">
 Vegas().
   withURL(Movies).
   mark(Point).
@@ -247,6 +253,7 @@ Vegas().
   encodeSize(aggregate=AggOps.Count, field="*", dataType=Quantitative).
   configCell(height=600,width=800).
   show
+                  </code>
                 </pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-2.jpg" alt=""></div>
@@ -557,6 +564,10 @@ Vegas().
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
 	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
 
+  <!-- highlight -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/scala.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
