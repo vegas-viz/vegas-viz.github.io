@@ -216,17 +216,13 @@
 							<a href="" class="btn btn-readmore">Scala</a>
 
 							<div class="post-article">
-                <pre>
-                  <code class="scala" >
-Vegas("Sample Area Chart", width=800, height=600)
+                <pre><code class="scala" >Vegas("Sample Area Chart", width=800, height=600)
   .withURL(Cars)
   .mark(Area)
   .encodeX("Acceleration", Quantitative, bin=Bin())
   .encodeY("Horsepower", Quantitative, AggOps.Mean, enableBin=false)
   .encodeColor(field="Cylinders", dataType=Nominal)
-  .show
-                  </code>
-                </pre>
+  .show</code></pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-1.jpg" alt=""></div>
 						</article>
@@ -247,17 +243,13 @@ Vegas("Sample Area Chart", width=800, height=600)
 							<a href="" class="btn btn-readmore">Scala</a>
 
 							<div class="post-article">
-                <pre>
-                  <code class="scala">
-Vegas("Sample Binned Scatterplot", width=800, height=600)
+                <pre><code class="scala">Vegas("Sample Binned Scatterplot", width=800, height=600)
   .withURL(Movies)
   .mark(Point)
   .encodeX("IMDB_Rating", Quantitative, bin=Bin(maxbins=10.0))
   .encodeY("Rotten_Tomatoes_Rating", Quantitative, bin=Bin(maxbins=10.0))
   .encodeSize(aggregate=AggOps.Count, field="*", dataType=Quantitative)
-  .show
-                  </code>
-                </pre>
+  .show</code></pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-2.jpg" alt=""></div>
 						</article>
@@ -278,17 +270,13 @@ Vegas("Sample Binned Scatterplot", width=800, height=600)
 							<a href="" class="btn btn-readmore">Scala</a>
 
 							<div class="post-article">
-                <pre>
-                  <code class="scala">
-Vegas("Sample Scatterplot", width=800, height=600)
+                <pre><code class="scala">Vegas("Sample Scatterplot", width=800, height=600)
   .withURL(Cars)
   .mark(Point)
   .encodeX("Horsepower", Quantitative)
   .encodeY("Miles_per_Gallon", Quantitative)
   .encodeColor(field="Acceleration", dataType=Quantitative, bin=Bin(maxbins=5.0))
-  .show
-                  </code>
-                </pre>
+  .show</code></pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-3.jpg" alt=""></div>
 						</article>
@@ -309,9 +297,7 @@ Vegas("Sample Scatterplot", width=800, height=600)
 							<a href="" class="btn btn-readmore">Scala</a>
 
 							<div class="post-article">
-                <pre>
-                  <code class="scala">
-  Vegas("Sample Multi Series Line Chart", width=800, height=600)
+                <pre><code class="scala">Vegas("Sample Multi Series Line Chart", width=800, height=600)
     .withURL(Stocks, formatType=DataFormat.Csv)
     .mark(Line)
     .encodeX("date", Temp)
@@ -321,9 +307,7 @@ Vegas("Sample Scatterplot", width=800, height=600)
        dataType=Nominal,
        legend=Legend(orient="left", title="Stock Symbol"))
     .encodeDetailFields(Field(field="symbol", dataType=Nominal))
-    .show
-                  </code>
-                </pre>
+    .show</code></pre>
               </div>
 						<div class="post-thumb"><img class="img-responsive" src="images/works/portfolio-4.jpg" alt=""></div>
 						</article>
