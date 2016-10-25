@@ -61,8 +61,8 @@
 					<ul class="nav navbar-nav navbar-right">
 				    	<li><a href="#header">Home</a></li>
 				    	<li><a href="#intro">About</a></li>
-				    	<li><a href="#gallery">Gallery</a></li>
-				    	<li><a href="#repository">Repository</a></li>
+				    	<li><a href="#blog">Gallery</a></li>
+				    	<li><a href="https://github.com/vegas-viz/Vegas">Repository</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
@@ -191,6 +191,8 @@
           <div class="section-title">
             <h1>Gallery</h1>
             <span class="st-border"></span>
+            Here we illustrate some of the main concepts of plotting with Vegas with some examples. 
+            For a more comprehensive set of examples check out the <a href="https://github.com/vegas-viz/Vegas"><b>Github repository.</b></a> 
           </div>
         </div>
 				<div class="col-md-9">
@@ -198,14 +200,15 @@
 
             <!--BEGIN-->
 						<article>
-							<h4 class="post-title"><a href="">The post title goes here.</a></h4>
-							<div class="post-meta text-uppercase">
+							<h4 class="post-title"><a href="">A Simple Area Chart</a></h4>
+							<!-- <div class="post-meta text-uppercase">
 								<span>Appril 3, 2014</span>
 								<span>In <a href="">Design</a></span>
 								<span>By <a href="">Admin</a></span>
-							</div>
+							</div> -->
 							<div class="post-article">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
+								Here, we illustrate several concepts. First, the , <code>encodeX</code> and <code>encodeY</code> directives map the two quantitative columns Acceleration and HorsePower to the X and Y axes. Then, we say that we want to bin the Acceleration variable, and for each bin, find the man Horsepower. Finally we tell Vegas to break up the dataset by the number of cylinders which is a categorical variable, via the <code>
+								encodeColor</code> directive. Note the Vegas automatically does the binning and the aggregation, and produces the color-coding together with the legend. 
 
 							</div>
 							<a href="" class="btn btn-readmore">Scala</a>
@@ -230,14 +233,13 @@ Vegas("Sample Area Chart", width=800, height=600)
 
             <!--BEGIN-->
 						<article>
-							<h4 class="post-title"><a href="">The post title goes here.</a></h4>
-							<div class="post-meta text-uppercase">
+							<h4 class="post-title"><a href="">A Binned Scatterplot</a></h4>
+							<!-- <div class="post-meta text-uppercase">
 								<span>Appril 3, 2014</span>
 								<span>In <a href="">Design</a></span>
 								<span>By <a href="">Admin</a></span>
-							</div>
+							</div> -->
 							<div class="post-article">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
 
 							</div>
 							<a href="" class="btn btn-readmore">Scala</a>
@@ -262,15 +264,14 @@ Vegas("Sample Binned Scatterplot", width=800, height=600)
 
             <!--BEGIN-->
 						<article>
-							<h4 class="post-title"><a href="">The post title goes here.</a></h4>
-							<div class="post-meta text-uppercase">
+							<h4 class="post-title"><a href="">Scatterplot with binned color coding</a></h4>
+							<!-- <div class="post-meta text-uppercase">
 								<span>Appril 3, 2014</span>
 								<span>In <a href="">Design</a></span>
 								<span>By <a href="">Admin</a></span>
-							</div>
+							</div> -->
 							<div class="post-article">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
-
+							
 							</div>
 							<a href="" class="btn btn-readmore">Scala</a>
 
@@ -294,15 +295,14 @@ Vegas("Sample Scatterplot", width=800, height=600)
 
             <!--BEGIN-->
 						<article>
-							<h4 class="post-title"><a href="">The post title goes here.</a></h4>
-							<div class="post-meta text-uppercase">
+							<h4 class="post-title"><a href="">A Multi-series Line Chart.</a></h4>
+							<!-- <div class="post-meta text-uppercase">
 								<span>Appril 3, 2014</span>
 								<span>In <a href="">Design</a></span>
 								<span>By <a href="">Admin</a></span>
-							</div>
+							</div> -->
 							<div class="post-article">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
-
+								
 							</div>
 							<a href="" class="btn btn-readmore">Scala</a>
 
